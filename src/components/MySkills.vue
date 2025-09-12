@@ -5,7 +5,7 @@
     </template>
     <template v-slot:card-group>
       <v-chip v-for="skill in skills" :key="skill" :color="skill.color" class="me-3 mt-3 border">
-        <img :src="`../src/assets/${skill.src}`" alt="" width="20px" height="20px" class="me-2">
+        <img :src="`assets/${skill.src}`" alt="" width="20px" height="20px" class="me-2">
         {{ skill.text }}
       </v-chip>
     </template>

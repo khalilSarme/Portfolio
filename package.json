@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "postbuild": "cp dist/index.html dist/404.html && pnpm run deploy",
+    "postbuild": "cp dist/index.html dist/404.html && cp src/assets/* dist/assets && pnpm run deploy",
     "deploy": "gh-pages -d dist",
     "preview": "vite preview",
     "lint": "eslint . --fix"
